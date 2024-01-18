@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    azure:
+      cosmos:
+        endpoint: ${dbURI}
+        key: ${dbKey}
+        database: ${dbName}
+        populate-query-metrics: true
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          DEBUG
